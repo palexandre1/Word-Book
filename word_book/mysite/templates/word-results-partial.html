@@ -1,0 +1,11 @@
+{% if words %}
+  <dl>
+  {% for item in words %}
+    <dt>Term: {{ item.word }}</dt>
+    <dd>Defintion: {{ item.definition }}</dd>
+  {% endfor %}
+  </dl>
+
+{% else %}
+  <p>No terms found.</p>
+{% endif %}
